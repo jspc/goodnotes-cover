@@ -1,0 +1,37 @@
+\documentclass[portrait, a4paper, 10pt]{article}
+
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage[document]{ragged2e}
+
+\usepackage{datetime}
+
+\usepackage{xcolor}
+\definecolor{text-gold}{HTML}{cfb53b}
+
+\usepackage{background}
+\backgroundsetup{
+  opacity=1,
+  firstpage=true,
+  scale=1,
+  angle=0,
+  contents={%
+    \includegraphics[width=\paperwidth,height=\paperheight]{img/cover}
+  }%
+}
+
+\geometry{right=0.5in, bottom=0.5in, left=0in, nohead, nofoot}
+
+\pagestyle{empty}
+\setlength\parindent{0pt}
+
+\begin{document}
+\null
+
+\vfill
+
+\begin{flushright}
+  \textcolor{text-gold}{\Huge \the\month -\the\year}
+\end{flushright}
+
+\end{document}
