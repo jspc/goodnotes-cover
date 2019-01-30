@@ -4,8 +4,6 @@
 \usepackage{graphicx}
 \usepackage[document]{ragged2e}
 
-\usepackage{datetime}
-
 \usepackage{xcolor}
 \definecolor{text-gold}{HTML}{cfb53b}
 
@@ -31,7 +29,7 @@
 \vfill
 
 \begin{flushright}
-  \textcolor{text-gold}{\Huge \the\month -\the\year}
+  \textcolor{text-gold}{\Huge \textbf{ {{ .Timestamp }} }}
 \end{flushright}
 
 \end{document}
