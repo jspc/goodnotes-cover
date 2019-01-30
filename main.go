@@ -52,7 +52,7 @@ func main() {
 	} {
 		v.Timestamp = fmt.Sprintf("%s %d", m, *year)
 
-		filename := filepath.Join(*outputDir, fmt.Sprintf("%s.tex", strings.ToLower(v.Timestamp)))
+		filename := filepath.Join(*outputDir, strings.Replace(fmt.Sprintf("%s.tex", strings.ToLower(v.Timestamp)), " ", "_", -1))
 
 		output, err := os.Create(filename)
 		if err != nil {
