@@ -1,4 +1,4 @@
-COVERNAME ?= $(USER)
+LINE1 ?= $(USER)
 
 default: all
 
@@ -8,7 +8,7 @@ build:
 	go build
 
 run:
-	./goodnotes-cover --name "$(COVERNAME)"
+	./goodnotes-cover --line1 "$(LINE1)"
 
 compile:
 	@script/compile.sh
